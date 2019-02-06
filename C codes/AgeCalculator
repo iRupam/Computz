@@ -1,0 +1,48 @@
+//This program is created by Rupam Medhi. 
+//You can find more program in http://computz365.blogspot.in 
+#include<stdio.h> 
+main() 
+{ 
+    int d1,d2,m1,m2,y1,y2,D,M,Y; 
+    printf("Enter your Birthday-date,month,year\n"); 
+    scanf("%d%d%d",&d1,&m1,&y1); 
+    printf("Enter today's date-date,month,year \n"); 
+    scanf("%d%d%d",&d2,&m2,&y2); 
+    if(((d1<=d2)&&(m1<=m2))||(d1<=d2)||(m1<=m2))//default and the easy condition 
+    { 
+        D=d2-d1; 
+        M=m2-m1; 
+        Y=y2-y1; 
+    } 
+    if((d1>d2)&&(m1>m2)) 
+    { 
+        D=30-d1+d2; 
+        M=12-m1+m2-1; 
+        Y=y2-y1-1; 
+    } 
+    if(d1>d2) 
+    { 
+        D=30-d1+d2; 
+        M=m2-m1-1; 
+        Y=y2-y1; 
+    } 
+    if((d1>d2)&&(m1==m2)) 
+    { 
+        D=30-d1+d2; 
+        M=12-m1+m2-1; 
+        Y=y2-y1-1; 
+    } 
+    if(m1>m2) 
+    { 
+        D=d2-d1; 
+        M=12-m1+m2; 
+        Y=y2-y1-1; 
+    } 
+    if(y1==y2) 
+    { 
+        D=d2-d1; 
+        M=m2-m1; 
+        Y=0; 
+    } 
+    printf("Your age is %d years, %d months and %d days\n",Y,M,D); 
+}
