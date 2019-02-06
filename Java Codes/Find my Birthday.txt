@@ -1,0 +1,37 @@
+/*
+Please have a look at the code and do run it in your machine also. If there is any bug, please inform me or suggest better solution.
+Let me know how can this piece of code can be better.
+*/
+
+import java.time.LocalDate;
+import java.time.Period;
+import java.util.Scanner;
+
+public class ageCalculator {
+
+```
+public static void main(String[] args) {
+	int d1;
+	int m1;
+	int y1;
+	
+	Scanner input = new Scanner(System.in);
+	
+	System.out.println("Please enter your date of birth: ");
+	
+	System.out.println("Date in number (DD): ");
+	d1 = input.nextInt();
+	System.out.println("Month in number (MM): ");
+	m1 = input.nextInt();
+	System.out.println("Year in number (YYYY): ");
+	y1 = input.nextInt();
+	
+	LocalDate birthDate = LocalDate.of(y1, m1, d1);
+	
+	LocalDate presentDate = LocalDate.now();
+	
+	Period age = Period.between(birthDate, presentDate);
+	
+	System.out.println("You are " + age.getYears() + " years, " + age.getMonths() + " months and " + age.getDays() + " days old.");
+}
+```
