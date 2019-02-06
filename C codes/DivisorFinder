@@ -1,0 +1,12 @@
+//Program for finding integer divisors of an number
+//Code by Rupam Medhi
+/Find more codes on https://computz365.blogspot.in
+#include<stdio.h>
+void main()
+{
+    int num,div,ans;
+    printf("Enter the number\n");
+    scanf("%d",&num);
+    for(div=2;div<=num;div++)
+        if(num%div==0)
+        printf("The divisor is %d\n",div);
