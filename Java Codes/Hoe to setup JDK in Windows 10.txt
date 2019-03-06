@@ -4,5 +4,5 @@
 1. First,download and install JDK of your choice
 2. Now go to default Java directory.
 3. Add a file named 'bin' if there is none.
-4. Copy the address as tect.
+4. Copy the address as text.
 5. Go to system settings, add new PATH Environment variable as the addess mentioned in previous steps.
