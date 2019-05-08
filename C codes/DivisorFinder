@@ -10,3 +10,4 @@ void main()
     for(div=2;div<=num;div++)
         if(num%div==0)
         printf("The divisor is %d\n",div);
+}
