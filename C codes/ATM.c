@@ -5,7 +5,7 @@ void main(){
     printf("***********STATE BANK OF INDIA**********\n");
     printf("Enter unique id\n");
     scanf("%d",&usr1);
-    printf("\nEnter your PIN\n");
+    printf("Enter your PIN\n");
     scanf("%d",&psw1);
     if(usr1==usr&&psw1==psw)
         {
@@ -15,7 +15,9 @@ void main(){
     else
     do
     {
+        printf("Enter unique id\n");
         scanf("%d",&usr1);
+        printf("Enter your PIN\n");
         scanf("%d",&psw1);
         flag++;
         if(usr1==usr&&psw1==psw)
