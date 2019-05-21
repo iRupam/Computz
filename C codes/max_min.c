@@ -18,5 +18,5 @@ void main(){
 		}
 	}
 	printf("Max=%d\n",max);
-	printf("Min=%d",min);
+	printf("Min=%d\n",min);
 }
