@@ -19,11 +19,13 @@ int main(){
         scanf("%d",&usr1);
         printf("Enter your PIN\n");
         scanf("%d",&psw1);
-        flag++;
         if(usr1==usr&&psw1==psw)
         {
             printf("LOGIN SUCCESSFUL\n");
             break;
+        }
+        else{
+            flag++;
         }
     }while(flag<2);
     }
