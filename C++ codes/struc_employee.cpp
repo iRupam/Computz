@@ -6,7 +6,7 @@ struct employee{
     char name[30];
     };
 int main(){
-    struct employee emp;
+    employee emp;
     cout<<"Enter details of the employee\n";
     cout<<"Name:?\n";
     cin.getline(emp.name,30);
