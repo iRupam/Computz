@@ -1,3 +1,4 @@
+//Question link : https://www.hackerrank.com/challenges/30-conditional-statements/problem
 //simplest code
 int main(){
   int N; 
