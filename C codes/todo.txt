@@ -1,0 +1,2 @@
+To combine multiple files use the following command in CMD
+gcc -o a file1.c file2.c
